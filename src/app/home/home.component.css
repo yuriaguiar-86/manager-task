@@ -16,6 +16,7 @@
   width: 500px;
   height: 400px;
   padding: 20px;
+  margin: 15px;
 }
 
 .sub-container-div {
@@ -48,4 +49,10 @@ h1 {
 hr {
   border: 1px solid var(--green);
   width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .th-responsive-table {
+    display: none;
+  }
 }

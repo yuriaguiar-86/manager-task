@@ -4,7 +4,13 @@
 
     <form [formGroup]="forms" (ngSubmit)="onSubmit()">
       <div>
-        <input class="form-input" name="priority" type="text" placeholder="Prioridade" formControlName="priority" />
+        <select name="priority" class="form-input">
+          <option [ngValue]="undefined">Selecione...</option>
+          <option value="BAIXA">BAIXA</option>
+          <option value="MEDIA">MEDIA</option>
+          <option value="ALTA">ALTA</option>
+          <option value="URGENTE">URGENTE</option>
+        </select>
       </div>
 
       <div>

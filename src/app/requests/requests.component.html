@@ -31,8 +31,8 @@
                 <a routerLink="/requests/view/{{ request.id }}" class="view">
                   <img [src]="view" alt="Visualizar">
                 </a>
-                <a routerLink="/requests/edit/{{ request.id }}" class="edit">
-                  <img [src]="edit" alt="Editar">
+                <a routerLink="/requests" class="edit">
+                  <img [src]="edit" alt="Editar" (click)="onUpdate()">
                 </a>
                 <a routerLink="/requests" class="delete">
                   <img [src]="delete" alt="Apagar" (click)="onDelete()">

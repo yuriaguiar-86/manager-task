@@ -29,4 +29,8 @@ export class RequestsComponent implements OnInit {
   onDelete() {
     alert("ERRO! Entre em contato com o adm do sistema");
   }
+
+  onUpdate() {
+    alert("ERRO! Entre em contato com o adm do sistema");
+  }
 }
