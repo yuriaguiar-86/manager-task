@@ -1,0 +1,18 @@
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.container p {
+  margin: 15px;
+}
+
+@media only screen and (max-height: 600px) {
+  .container p {
+    display: none;
+  }
+}

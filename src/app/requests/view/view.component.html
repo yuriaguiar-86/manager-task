@@ -1,0 +1,49 @@
+<app-header></app-header>
+<main class="container">
+  <div class="sub-container">
+    <section class="section-header">
+      <h1>Solicitaçãos <small>visualizar</small></h1>
+    </section>
+    <hr />
+
+    <section class="section-main">
+      <dl>
+        <div class="row">
+          <dt>ID: </dt>
+          <dd>{{ request.id }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Cliente: </dt>
+          <dd>{{ request.client }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Solicitante: </dt>
+          <dd>{{ request.request }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Responsável: </dt>
+          <dd>{{ request.responsible }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Descrição: </dt>
+          <dd>{{ request.description }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Data Limite: </dt>
+          <dd>{{ request.deadline }}</dd>
+        </div>
+
+        <div class="row">
+          <dt>Prioridade: </dt>
+          <dd>{{ request.priority }}</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+</main>
+<app-footer></app-footer>

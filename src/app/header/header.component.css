@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 50px 0;
+}
+
+.container img {
+  width: 70px;
+}
+
+.container-div ul {
+  list-style: none;
+}
+
+.container-div ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}

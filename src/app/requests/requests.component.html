@@ -1,0 +1,51 @@
+<app-header></app-header>
+
+<main class="container">
+  <div class="sub-container">
+    <section class="section-header">
+      <h1>Solicitações</h1>
+      <p><a routerLink="/requests/add">Cadastrar</a></p>
+    </section>
+    <hr />
+
+    <section class="section-main">
+      <table>
+        <thead>
+          <th class="th-responsive">ID</th>
+          <th class="th-responsive-table">Cliente</th>
+          <th>Responsável</th>
+          <th>Descrição</th>
+          <th class="th-responsive">Data Limite</th>
+          <th>Ações</th>
+        </thead>
+
+        <tbody *ngFor="let request of requests">
+          <tr>
+            <th class="th-responsive">{{ request.id }}</th>
+            <th class="th-responsive-table">{{ request.client }}</th>
+            <th>{{ request.responsible }}</th>
+            <th>{{ request.description }}</th>
+            <th class="th-responsive">{{ request.deadline }}</th>
+            <th>
+              <div class="icons">
+                <a routerLink="/requests/view/{{ request.id }}" class="view">
+                  <img [src]="view" alt="Visualizar">
+                </a>
+                <a routerLink="/requests/edit/{{ request.id }}" class="edit">
+                  <img [src]="edit" alt="Editar">
+                </a>
+                <a routerLink="/requests" class="delete">
+                  <img [src]="delete" alt="Apagar" (click)="onDelete()">
+                </a>
+              </div>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+  </div>
+</main>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,38 @@
+<app-header></app-header>
+<main class="container">
+  <div class="sub-container">
+
+    <form [formGroup]="forms" (ngSubmit)="onSubmit()">
+      <div>
+        <input class="form-input" name="priority" type="text" placeholder="Prioridade" formControlName="priority" />
+      </div>
+
+      <div>
+        <input class="form-input" name="description" type="text" placeholder="Descrição" formControlName="description" />
+      </div>
+
+      <div>
+        <input class="form-input" name="client" type="text" placeholder="Empresa" formControlName="client" />
+      </div>
+
+      <div>
+        <input class="form-input" name="deadline" type="date" formControlName="deadline" />
+      </div>
+
+      <div>
+        <input class="form-input" name="request" type="text" placeholder="Solicitante" formControlName="request" />
+      </div>
+
+      <div>
+        <input class="form-input" name="responsible" type="text" placeholder="Responsável" formControlName="responsible" />
+      </div><hr>
+
+      <div>
+        <button class="form-button" type="submit" [disabled]="forms.invalid">Salvar</button>
+      </div>
+    </form>
+  </div>
+</main>
+<app-footer></app-footer>
+
+<router-outlet></router-outlet>

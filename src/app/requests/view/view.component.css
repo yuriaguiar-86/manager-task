@@ -1,0 +1,53 @@
+.container {
+  background-color: var(--white);
+  color: var(--black);
+  max-height: 80vh;
+  height: 80vh;
+  padding: 30px 50px;
+}
+
+.sub-container {
+  border: 2px solid var(--green);
+  height: 100%;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header p a{
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+hr {
+  border: 0.9px solid var(--green);
+  margin: 30px 0;
+}
+
+dt {
+  font-weight: 600;
+}
+dt, dl {
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+
+}

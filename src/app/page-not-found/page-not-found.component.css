@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--white);
+  color: var(--black);
+  height: 80vh;
+  padding: 30px 50px;
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container section img {
+  margin: 30px;
+  width: 400px;
+}

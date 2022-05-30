@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Paleta */
+:root {
+  --black: #444444;
+  --white: #fff;
+  --green: #3A7445;
+  --blue: #2E6D99;
+  --red: #FA3626;
+  --orange: #FF8F3C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
